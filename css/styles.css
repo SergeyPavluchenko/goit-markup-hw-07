@@ -64,7 +64,7 @@ ul{
     align-items: center;
 }
 
-.header-list{
+.menu{
     display: flex;
     background-color: var(--head-color);
 }
@@ -73,7 +73,7 @@ ul{
     color: var(--header-text-color);
 }
 
-.header-name{
+.header__logo{
     margin-right: 93px;
     font-family: 'Raleway';
     font-weight: 700;
@@ -84,15 +84,15 @@ ul{
     text-decoration: none;
 }
 
-.header-logo{
+.logo__header-logo{
     color: #212121;
 }
 
-.header-info:not(:last-child){
+.menu__info:not(:last-child){
     margin-right: 50px;
 }
 
-.header-item{
+.menu__item{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -100,8 +100,8 @@ ul{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-item:hover,
-.header-item:focus{
+.menu__item:hover,
+.menu__item:focus{
     color: #2196F3;
 }
 
@@ -110,7 +110,7 @@ ul{
     position: relative;
 }
 
-.header-item.linea::after{
+.menu__item.linea::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -122,22 +122,22 @@ ul{
 }
 
 
-.header-contact-list{
+.contacts{
     display: flex;
     align-items: center;
     margin-left: auto;
 }
 
-.header-contact-li + .header-contact-li{
+.contacts__list + .contacts__list{
     margin-left: 30px;    
 }
 
 
-.header-contact-icon{
+.contacts__icon{
     margin-right: 10px;
 }
 
-.header-contact{
+.contacts__link{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -148,12 +148,12 @@ ul{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contact-icon{
+.contacts__icon{
     fill: currentColor;
 }
 
-.header-contact:hover,
-.header-contact:focus{
+.contacts__link:hover,
+.contacts__link:focus{
     color: #2196F3;
 }
   
@@ -170,7 +170,7 @@ ul{
     background-repeat: no-repeat;
 }
 
-.head{
+.business-container__head{
     max-width: 696px;
     margin-top: auto;
     margin-right: auto;
@@ -214,7 +214,7 @@ ul{
     margin-bottom: 50px;
 }
 
-.order{
+.business-container__order{
     padding: 10px 32px;
     border-radius: 4px;
     border: none;
@@ -261,7 +261,7 @@ ul{
 }
 
 
-.button-close{
+.modal__close{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -274,12 +274,12 @@ ul{
     background-color: #FFFFFF;
 }
 
-.button-close:focus,
-.button-close:hover{
+.modal__close:focus,
+.modal__close:hover{
     fill: #2196F3;
 }
 
-.modal-header{
+.modal__header{
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -289,7 +289,7 @@ ul{
     color: #212121;
 }
 
-.modal-input{
+.modal-box1__input{
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -301,13 +301,13 @@ ul{
 
 }
 
-.modal-input:focus,
-.modal-input:hover{
+.modal-box1__input:focus,
+.modal-box1__input:hover{
     border-color: #2196F3;
 }
 
-.modal-input:focus + .modal-icon-svg,
-.modal-input:hover + .modal-icon-svg{
+.modal-box1__input:focus + .modal-box1__svg,
+.modal-box1__input:hover + .modal-box1__svg{
     fill: #2196F3;
 }
 
@@ -316,11 +316,11 @@ ul{
 }
 
 
-.text-box{
+.comment{
     margin-bottom: 20px;
 }
 
-.text-label{
+.modal-box__text{
     display: block;
     font-weight: 400;
     font-size: 12px;
@@ -331,7 +331,7 @@ ul{
     resize: none;
 }
 
-.modal-check-box{
+.modal-check{
     position: relative;
 }
 
@@ -349,11 +349,7 @@ ul{
     margin: -1px;
 }
 
-.modal-check-box{
-    position: relative;
-}
-
-.label-check{
+.modal-check__check{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,7 +360,7 @@ ul{
     color: #757575;
 }
 
-.check-icon{
+.modal-check__icon{
     justify-content: center;
     display: block;
     width: 16px;
@@ -374,7 +370,7 @@ ul{
     margin-right: 9px;
 }
 
-.modal-check:checked + .check-icon{
+.modal-check__checkbox:checked + .modal-check__icon{
     background-color: #2196F3;
     border-color: transparent;
     background-image: url(../images/icon\ check.svg);
@@ -382,7 +378,7 @@ ul{
     background-repeat: no-repeat;
 }
 
-.check-text{
+.modal-check__text{
     color: #2196F3;
     text-decoration: underline;
     font-weight: 400;
@@ -391,18 +387,18 @@ ul{
     letter-spacing: 0.03em;
 }
 
-.modal-icon{
+.modal-box1{
     position: relative;
 }
 
-.modal-icon-svg{
+.modal-box1__svg{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
 }
 
-.modal-text{
+.comment__text{
     display: block;
     width: 100%;
     height: 120px;
@@ -415,8 +411,8 @@ ul{
 
 }
 
-.modal-text:focus,
-.modal-text:hover{
+.comment__text:focus,
+.comment__text:hover{
     border-color: #2196F3;
 }
 

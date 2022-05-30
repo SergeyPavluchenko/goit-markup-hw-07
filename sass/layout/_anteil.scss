@@ -46,10 +46,9 @@
 
 .list-team{
     display: flex;
-}
-
-.list-team:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 30px;
+}
 }
 
 .team:not(:last-child) {

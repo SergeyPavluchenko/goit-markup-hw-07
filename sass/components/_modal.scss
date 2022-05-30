@@ -7,11 +7,10 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden{
-    opacity: 0;
-    pointer-events: none;
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+    }    
 }
 
 .modal{
@@ -39,12 +38,12 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     fill: #000000;
     background-color: #FFFFFF;
+    &:focus,
+    &:hover{
+        fill: #2196F3;
+}
 }
 
-.modal__close:focus,
-.modal__close:hover{
-    fill: #2196F3;
-}
 
 .modal__header{
     margin-bottom: 12px;
@@ -65,12 +64,10 @@
     padding-left: 42px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:focus,
+    &:hover{
+        border-color: #2196F3;
 }
-
-.modal-box1__input:focus,
-.modal-box1__input:hover{
-    border-color: #2196F3;
 }
 
 .modal-box1__input:focus + .modal-box1__svg,
@@ -121,14 +118,13 @@
     border: 2px solid #000000;
     border-radius: 3px;
     margin-right: 9px;
-}
-
-.modal-check__checkbox:checked + .modal-check__icon{
-    background-color: #2196F3;
-    border-color: transparent;
-    background-image: url(../images/icon\ check.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    .modal-check__checkbox:checked+&{
+        background-color: #2196F3;
+        border-color: transparent;
+        background-image: url(../images/icon\ check.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 .modal-check__text{
@@ -161,12 +157,10 @@
     resize: none;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:focus,
+    &:hover{
+        border-color: #2196F3;
 }
-
-.comment__text:focus,
-.comment__text:hover{
-    border-color: #2196F3;
 }
 
 .modal-icon-svg{
@@ -187,12 +181,10 @@
     border: none;
     cursor: pointer;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover,
+    &:focus{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.button-modal:hover,
-.button-modal:focus{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-modal-text{

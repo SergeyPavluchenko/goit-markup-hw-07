@@ -1,9 +1,15 @@
 @import './base/reset';
 @import './base/common';
+@import './utils/hidden';
+@import "./utils/variables";
+
+
 
 @import "./components/modal";
 @import "./components/btn";
 @import "./components/footer-style";
+@import "./components/header-logo";
+
 
 
 
@@ -19,6 +25,5 @@
 
 
 
-@import './utils/vars';
-@import './utils/hidden';
+
 

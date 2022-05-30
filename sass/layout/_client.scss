@@ -23,9 +23,6 @@
     width: 170px;
     height: 92px;
     padding: 16px 32px;
-}
-
-.client-link{
     background-color: #FFFFFF;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
@@ -35,21 +32,19 @@
     justify-content: center;
     background-position: center;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        border-color: #2196F3;
 }
-
-.client-link:hover,
-.client-link:focus{
-    border-color: #2196F3;
 }
 
 .client-link-svg {
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .client-link:hover &,
+    .client-link:focus &{
+        fill: #2196F3;
 }
-
-.client-link:hover .client-link-svg,
-.client-link:focus .client-link-svg{
-    fill: #2196F3;
 }
 
 .main h1{
